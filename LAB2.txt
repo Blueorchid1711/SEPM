@@ -1,0 +1,47 @@
+#📚 Library Management System – Data Dictionary
+
+This document describes the data elements and data flows used in the Library Management System, as represented in the Data Flow Diagrams (DFD).
+
+👤 1. Student
+
+Stores information related to students using the library system.
+
+Field Name	Description
+Student_ID	Unique student number
+Name	Student name
+Department	Department name
+📖 2. Book
+
+Stores details of books available in the library.
+
+Field Name	Description
+Book_ID	Unique book number
+Title	Book title
+Author	Author name
+Status	Available / Issued
+🧾 3. Issue Record
+
+Maintains records of books issued to students.
+
+Field Name	Description
+Issue_ID	Unique issue number
+Student_ID	Issuing student
+Book_ID	Issued book
+Issue_Date	Date of issue
+Return_Date	Date of return
+🔄 4. Data Flows
+
+Defines the flow of data between external entities and system processes.
+
+Data Flow	Description
+Search Request	Book name or author
+Issue Request	Student ID + Book ID
+Return Request	Book ID
+Reports	Issued books list
+✅ Notes
+
+This data dictionary supports Level 0 and Level 1 DFDs of the Library Management System.
+
+All fields are uniquely identified to ensure data consistency and integrity.
+
+The system helps in efficient book searching, issuing, returning, and reporting.
